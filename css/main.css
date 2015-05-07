@@ -1,0 +1,47 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+    .panel-blue{
+        background-color: #4B74C5;
+        color: #fff;
+        padding: 36px 0;
+      }
+      .panel-grey{
+        background-color: #e2e2e2;
+        padding: 36px 0;
+      }
+      .panel-white{
+        background-color: #fff;
+        color: #333;
+        padding: 36px 0;
+      }
+      
+      .icon-large{
+         font-size: 72px;
+      }
+      
+      
+      .fixed-label{
+        width: 80px;
+        display: inline-block;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

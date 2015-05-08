@@ -22,6 +22,16 @@
       .icon-large{
          font-size: 72px;
       }
+      .icon-medium{
+         font-size: 46px;
+      }
+      
+      .icon-offset{
+         font-size: 25px;
+        position: absolute;
+        margin-left: -40px;
+        margin-top: 4px;
+      }
       
       
       .fixed-label{

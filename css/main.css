@@ -1,57 +1,59 @@
+body{
+    font-size: 16px;
+}
+
+h1{
+    color: #4da4ce !important;
+}
+
+h1, h2{
+    text-transform:uppercase;
+}
+
+h3   {
+    color: #4da4ce !important;
+}
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-   
-    .panel-blue{
-        background-color: #4B74C5;
-        color: #fff;
-        padding: 36px 0;
-      }
-      .panel-grey{
-        background-color: #e2e2e2;
-        padding: 36px 0;
-      }
-      .panel-white{
-        background-color: #fff;
-        color: #333;
-        padding: 36px 0;
-      }
-      
-      .icon-large{
-         font-size: 72px;
-      }
-      .icon-medium{
-         font-size: 46px;
-      }
-      
-      .icon-offset{
-         font-size: 25px;
-        position: absolute;
-        margin-left: -40px;
-        margin-top: 4px;
-      }
-      
-      
-      .fixed-label{
-        width: 80px;
-        display: inline-block;
-      }
+/* Panels */
+.panel-header{
+    background: linear-gradient(to right, #e0e0e0 0%,#f2f2f2 51%,#e0e0e0 100%); /* W3C */
+    background-image: url("../img/brickwall.png");
+}
+
+.panel{
+    padding: 36px 0;
+    border-bottom: 1px solid #dbdddf;
+}
+.panel-white {
+    background-color: #fff;
+    background: linear-gradient(to right, #f7f7f7 0%,#ffffff 50%,#f7f7f7 100%); /* W3C */
+    color: #333;
+}
+.panel-bottom {
+    background-color: #22272d;
+    color: #5e646c;
+    padding: 36px 0;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Icons */
+.icon-large {
+    font-size: 72px;
+}
+.icon-medium {
+    font-size: 46px;
+}
+.icon-margin {
+    margin-left: 12px;
+}
+.icon-offset {
+    font-size: 25px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 4px;
+}
+.fixed-label {
+    width: 80px;
+    display: inline-block;
+}

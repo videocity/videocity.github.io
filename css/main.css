@@ -1,31 +1,36 @@
-body{
+body {
     font-size: 16px;
 }
 
-h1{
+h1 {
     color: #4da4ce !important;
     font-weight: bold;
 }
 
-h1, h2{
+h1, h2 {
     text-transform:uppercase;
 }
 
-h3   {
+h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+h3 {
     color: #4da4ce !important;
 }
 
 
 /* Panels */
-.panel-header{
-    background: linear-gradient(to right, #e0e0e0 0%,#f2f2f2 51%,#e0e0e0 100%); /* W3C */
-    background-image: url("../img/brickwall.png");
-}
-
-.panel{
+.panel {
     padding: 36px 0;
     border-bottom: 1px solid #dbdddf;
 }
+
+.panel-header {
+    background-image: url("../img/brickwall.png");
+}
+
 .panel-white {
     background-color: #fff;
     background: linear-gradient(to right, #f7f7f7 0%,#ffffff 50%,#f7f7f7 100%); /* W3C */
@@ -39,21 +44,20 @@ h3   {
 
 
 /* Icons */
-.icon-large {
-    font-size: 72px;
-}
 .icon-medium {
     font-size: 46px;
+    color: #4da4ce;
+    margin-top: 24px;
 }
-.icon-margin {
-    margin-left: 12px;
+
+.icon-checkmark {
+    color: #1bb580;
+    margin-right: 12px;
+    font-size: 12px;
 }
-.icon-offset {
-    font-size: 25px;
-    position: absolute;
-    margin-left: -40px;
-    margin-top: 4px;
-}
+
+
+/* Misc */
 .fixed-label {
     width: 80px;
     display: inline-block;

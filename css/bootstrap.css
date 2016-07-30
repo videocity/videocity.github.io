@@ -3,11 +3,6 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
-/*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=b0cbf45b75628137b0bc8e21ee125c6d)
- * Config saved to config.json and https://gist.github.com/b0cbf45b75628137b0bc8e21ee125c6d
- */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -23,18 +18,11 @@ a:active,
 a:hover {
   outline: 0;
 }
-b,
-strong {
+b {
   font-weight: bold;
 }
 small {
   font-size: 80%;
-}
-hr {
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
-  height: 0;
 }
 table {
   border-collapse: collapse;
@@ -60,7 +48,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -78,12 +66,6 @@ a:focus {
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
-}
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #eeeeee;
 }
 .container {
   margin-right: auto;
@@ -179,10 +161,4 @@ hr {
 .container-fluid:after,
 .row:after {
   clear: both;
-}
-.hide {
-  display: none !important;
-}
-.show {
-  display: block !important;
 }

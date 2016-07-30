@@ -9,9 +9,197 @@
   <meta name="keywords" content="internet cafe sligo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
   <!-- Inlined CSS for pagespeed -->
+  <style>
+    /*!
+    * Bootstrap v3.3.7 (http://getbootstrap.com)
+    * Copyright 2011-2016 Twitter, Inc.
+	  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+    */
+    
+    a {
+      background-color: transparent;
+      color: #337ab7;
+      text-decoration: none
+    }
+    
+    a:active,
+    a:hover {
+      outline: 0
+    }
+    
+    b {
+      font-weight: 700
+    }
+    
+    small {
+      font-size: 80%
+    }
+    
+    table {
+      border-collapse: collapse;
+      border-spacing: 0
+    }
+    
+    td,
+    th {
+      padding: 0
+    }
+    
+    *,
+    :after,
+    :before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box
+    }
+    
+    html {
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      font-size: 10px;
+      -webkit-tap-highlight-color: transparent
+    }
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      background-color: #fff
+    }
+    
+    a:focus,
+    a:hover {
+      color: #23527c;
+      text-decoration: underline
+    }
+    
+    a:focus {
+      outline: -webkit-focus-ring-color auto 5px;
+      outline-offset: -2px
+    }
+    
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px
+    }
+    
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9 {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px
+    }
+    
+    @media (min-width:768px) {
+      .container {
+        width: 750px
+      }
+    }
+    
+    @media (min-width:992px) {
+      .container {
+        width: 970px
+      }
+    }
+    
+    @media (min-width:1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+    
+    .row {
+      margin-left: -15px;
+      margin-right: -15px
+    }
+    
+    @media (min-width:992px) {
+      .col-md-1,
+      .col-md-10,
+      .col-md-11,
+      .col-md-12,
+      .col-md-2,
+      .col-md-3,
+      .col-md-4,
+      .col-md-5,
+      .col-md-6,
+      .col-md-7,
+      .col-md-8,
+      .col-md-9 {
+        float: left
+      }
+      .col-md-12 {
+        width: 100%
+      }
+      .col-md-11 {
+        width: 91.66666667%
+      }
+      .col-md-10 {
+        width: 83.33333333%
+      }
+      .col-md-9 {
+        width: 75%
+      }
+      .col-md-8 {
+        width: 66.66666667%
+      }
+      .col-md-7 {
+        width: 58.33333333%
+      }
+      .col-md-6 {
+        width: 50%
+      }
+      .col-md-5 {
+        width: 41.66666667%
+      }
+      .col-md-4 {
+        width: 33.33333333%
+      }
+      .col-md-3 {
+        width: 25%
+      }
+      .col-md-2 {
+        width: 16.66666667%
+      }
+      .col-md-1 {
+        width: 8.33333333%
+      }
+    }
+    
+    .clearfix:after,
+    .clearfix:before,
+    .container:after,
+    .container:before,
+    .row:after,
+    .row:before {
+      content: " ";
+      display: table
+    }
+    
+    .clearfix:after,
+    .container:after,
+    .row:after {
+      clear: both
+    }
+  </style>
+
   <style>
     body {
       font-size: 16px;
@@ -61,7 +249,6 @@
       background: linear-gradient(45deg, #4da4ce 0%, #000 100%);
       font-size: 21px;
       font-weight: 200;
-      margin-top: 0 !important;
     }
     
     .panel-white {
@@ -72,7 +259,7 @@
     .panel-bottom {
       background-color: #22272d;
       color: #5e646c;
-      padding: 36px 0;
+      padding-top: 36px;
     }
     
     .panel-bottom td:first-child {
@@ -110,8 +297,6 @@
     }
   </style>
 
-  <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>-->
-
   <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -123,20 +308,17 @@
 <body>
 
   <!-- Page header -->
-  <div class="panel panel-header" style="margin-bottom: 0; border-radius: 0;">
+  <section class="panel panel-header">
     <div class="container">
       <h1>Video City </h1>
       <p style="margin-top: 0;">Internet Cafe and Movie Rental centrally located in Sligo, Ireland.</p>
     </div>
-  </div>
+  </section>
 
 
   <!--  Internet Cafe Section  -->
-  <div class="panel panel-white">
+  <section class="panel panel-white">
     <div class="container">
-
-      <a name="internet-cafe"></a>
-
 
       <h2>Internet Cafe</h2>
 
@@ -207,14 +389,12 @@
       </div>
 
     </div>
-  </div>
+  </section>
 
 
   <!--  Movie Rental Section  -->
-  <div class="panel panel-white">
+  <section class="panel panel-white">
     <div class="container">
-
-      <a name="movie-rental"></a>
 
       <h2>Movie Rental</h2>
 
@@ -236,13 +416,12 @@
       </div>
 
     </div>
-  </div>
+  </section>
 
 
   <!--  Contact Us Section  -->
-  <div class="panel panel-bottom" style="padding-bottom: 0;">
+  <section class="panel panel-bottom">
     <div class="container">
-      <a name="contact-us"></a>
 
       <h2>Contact Us</h2>
 
@@ -252,9 +431,9 @@
         <div class="col-md-5">
 
           <h3>Details</h3>
-          <p><b class="fixed-label">Phone&nbsp;</b>(071) 914 5685</p>
-          <p><b class="fixed-label">Email&nbsp;</b><a href="mailto:videocitysligo@gmail.com">videocitysligo@gmail.com</a></p>
-          <p><b class="fixed-label">Address&nbsp;</b>Video City, Wine St, Sligo, Ireland</p>
+          <p><b class="fixed-label">Phone</b>(071) 914 5685</p>
+          <p><b class="fixed-label">Email</b><a href="mailto:videocitysligo@gmail.com">videocitysligo@gmail.com</a></p>
+          <p><b class="fixed-label">Address</b>Video City, Wine St, Sligo, Ireland</p>
 
           <br>
 
@@ -308,31 +487,23 @@
 
     </div>
 
-  </div>
+  </section>
 
   <script>
-         // Only display and load google map after user starts to scroll.       
-         var firstScroll = true;
-         
-         if(firstScroll)
-          {
-            window.onscroll = function () {  
-              firstScroll = false;
+    // Load and display google map after user scrolls.       
+    window.onscroll = function () {  
+      var iframe = document.createElement('iframe');
+      iframe.frameBorder="0";
+      iframe.src="https://www.google.com/maps/embed/v1/place?q=Video%20City%2C%20Sligo%2C%20Ireland&key=AIzaSyAP5yxYpc6p1GFpa5Ndx8KfYkRlqLsDzH0";
+      iframe.width = "100%";
+      iframe.height = "360px";
 
-              var mapContainer = document.getElementById("map")
-              var iframe = document.createElement('iframe');
-              iframe.frameborder = "0";
-              iframe.src="https://www.google.com/maps/embed/v1/place?q=Video%20City%2C%20Sligo%2C%20Ireland&key=AIzaSyAP5yxYpc6p1GFpa5Ndx8KfYkRlqLsDzH0";
-              iframe.width = "100%";
-              iframe.height = "360px";
+      document.getElementById("map").appendChild(iframe);
 
-              mapContainer.appendChild(iframe);
-
-              // Unbind scroll event.
-              window.onscroll = null;
-          }     
-        } 
-     </script>
+      // Unbind scroll event.
+      window.onscroll = null;
+    }     
+  </script>
 
 </body>
 

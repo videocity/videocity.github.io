@@ -486,8 +486,8 @@
   </section>
 
   <script>
-    // Load and display google map after user scrolls.       
-    window.onscroll = function () {  
+
+    function loadAndDisplayGoogleMap(){
       var iframe = document.createElement('iframe');
       iframe.frameBorder="0";
       iframe.src="https://www.google.com/maps/embed/v1/place?q=Video%20City%2C%20Sligo%2C%20Ireland&key=AIzaSyAP5yxYpc6p1GFpa5Ndx8KfYkRlqLsDzH0";
@@ -495,10 +495,17 @@
       iframe.height = "360px";
 
       document.getElementById("map").appendChild(iframe);
-
-      // Unbind scroll event.
+    }
+     
+    window.onscroll = function () {  
+      loadAndDisplayGoogleMap();
       window.onscroll = null;
-    };     
+    };
+
+    window.ontouchmove = function () {  
+      loadAndDisplayGoogleMap();
+      window.ontouchmove = null;
+    };  
   </script>
 
 </body>

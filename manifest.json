@@ -1,6 +1,7 @@
 {
     "name": "Video City",
     "short_name": "Video City",
+    "description": "Internet Cafe and Movie Rental centrally located in Sligo, Ireland.",
     "start_url": ".",
     "theme_color": "#387694",
     "background_color": "#FFF",

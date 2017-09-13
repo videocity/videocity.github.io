@@ -46,6 +46,15 @@
       padding-right: 24px;
     }
 
+    .opening-hours td {
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+
+    .opening-hours tr {
+      padding-top: 16px;
+    }
+
     *,
      :after,
      :before {
@@ -66,7 +75,8 @@
       font-size: 16px;
       line-height: 1.42857143;
       color: #333;
-      background-color: #fff
+      background-image: url("img/isometropolis.png");
+      background-color: #4da4ce;
     }
 
     a:focus,
@@ -83,8 +93,8 @@
     .container {
       margin-right: auto;
       margin-left: auto;
-      padding-left: 15px;
-      padding-right: 15px
+      padding-left: 24px;
+      padding-right: 24px
     }
 
     .col-md-1,
@@ -107,19 +117,29 @@
 
     @media (min-width:768px) {
       .container {
-        width: 750px
+        width: 750px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 12px;
       }
     }
 
     @media (min-width:992px) {
       .container {
-        width: 970px
+        width: 970px;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-bottom: 24px;
       }
     }
 
     @media (min-width:1200px) {
       .container {
-        width: 1170px
+        width: 1170px;
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 24px;
+        padding-bottom: 36px;
       }
     }
 
@@ -200,19 +220,27 @@
     /* Headings */
 
     h1 {
-      font-size: 48px;
+      font-size: 3em;
       font-weight: 700;
       margin-top: 0;
       margin-bottom: 0;
       text-shadow: 0px 2px 3px #000;
       display: inline-block;
+      color: #FFCF22;
+      line-height: 1em;
     }
 
     .header-postfix {
       font-size: 15px;
       box-shadow: none;
-      font-weight: 100;
+      font-weight: bold;
       white-space: nowrap;
+      text-shadow: 0px 2px 3px #000;
+    }
+
+    .subheading {
+      margin-top: 0;
+      font-weight: bold;
       text-shadow: 0px 2px 3px #000;
     }
 
@@ -235,28 +263,40 @@
     }
     /* Panels */
 
-    .panel {
-      padding: 24px 0;
-    }
-
     .panel-header {
       color: #fff;
-      background: #4da4ce;
-      background: linear-gradient(45deg, #4da4ce 0%, #000 100%);
       font-size: 21px;
       font-weight: 200;
     }
 
+    .panel-internet {
+      background: linear-gradient(to right, #f7f7f7 0, #e6e6e6 50%, #f7f7f7 100%);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      color: #333;
+    }
+
+    .panel-internet h3 {
+      color: #1768A5;
+    }
+
+
     .panel-white {
       background: linear-gradient(to right, #f7f7f7 0, #fff 50%, #f7f7f7 100%);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       color: #333;
     }
 
     .panel-bottom {
       background-color: #22272d;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       color: #aeaeb1;
       padding-top: 36px;
       padding-bottom: 0;
+      margin-bottom: 48px;
+    }
+
+    .panel-bottom h3 {
+      color: #FFCF22;
     }
 
     .panel-bottom td:first-child {
@@ -268,10 +308,14 @@
     }
     /* Misc / Utility classes  */
 
-    .checkmark {
+    .check {
       color: #1bb580;
       margin-right: 12px;
       font-weight: bold;
+    }
+
+    .text-center {
+      text-align: center;
     }
 
     .fixed-label {
@@ -307,27 +351,27 @@
     <div class="container">
       <h1>VIDEO CITY</h1>
       <small class="header-postfix">EST 1982</small>
-      <p style="margin-top: 0;">Internet Cafe and Movie Rental centrally located in Sligo, Ireland.</p>
+      <p class="subheading">Internet Cafe and Movie Rental centrally located in Sligo, Ireland.</p>
     </div>
   </section>
 
 
   <!--  Internet Cafe Section  -->
-  <section class="panel panel-white">
-    <div class="container">
+  <section class="panel ">
+    <div class="container panel-internet">
 
       <h2>Internet Cafe</h2>
 
       <div class="row">
 
-        <div class="col-md-4">
+        <div class="col-md-5">
           <h3>Information</h3>
-          <p><span class="checkmark">✓</span> Fast new <b>Windows 10</b> computers.</p>
-          <p><span class="checkmark">✓</span> <b>Printing</b> and <b>Scanning</b> services available.</p>
-          <p><span class="checkmark">✓</span> <b>Photocopying</b> facilities.</p>
-          <p><span class="checkmark">✓</span> <b>Western Union</b> Money Transfer.</p>
-          <p><span class="checkmark">✓</span> Headsets on request.</p>
-          <p><span class="checkmark">✓</span> Video chat using our webcams.</p>
+          <p><span class="check">✓</span> Fast new <b>Windows 10</b> computers.</p>
+          <p><span class="check">✓</span> <b>Printing</b> and <b>Scanning</b> services available.</p>
+          <p><span class="check">✓</span> <b>Photocopying</b> facilities.</p>
+          <p><span class="check">✓</span> <b>Western Union</b> Money Transfer.</p>
+          <p><span class="check">✓</span> Headsets on request.</p>
+          <p><span class="check">✓</span> Video chat using our webcams.</p>
         </div>
 
         <div class="col-md-3">
@@ -360,7 +404,7 @@
           </table>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-4">
           <h3>Printing Prices</h3>
           <table>
             <tr>
@@ -389,13 +433,13 @@
 
 
   <!--  Movie Rental Section  -->
-  <section class="panel panel-white">
-    <div class="container">
+  <section class="panel">
+    <div class="container panel-white">
 
-      <h2>Movie Deals</h2>
+      <h2 class="text-center">Movie Deals</h2>
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-12 text-center">
           <p><b>2</b> New movies for <b>2</b> nights - Only <b>€6</b></p>
           <p><b>3</b> Older movies for <b>3</b> nights - Only <b>€5</b></p>
         </div>
@@ -406,12 +450,12 @@
 
 
   <!--  Contact Us Section  -->
-  <section class="panel panel-bottom">
-    <div class="container">
+  <section class="panel">
+    <div class="container panel-bottom">
 
       <div class="row">
 
-        <div class="col-md-5">
+        <div class="col-md-6">
 
           <h3>Contact Us</h3>
           <p><b class="fixed-label">Phone</b><a href="tel:+353719145685">(071) 914 5685</a></p>
@@ -420,48 +464,56 @@
 
           <br>
 
+        </div>
+
+
+        <div class="col-md-6">
+
           <h3>Opening Hours</h3>
-          <table>
+          <table class="opening-hours">
             <tr>
               <td>Monday</td>
-              <td>11:00 a.m. – 7:00 p.m.</td>
+              <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
             <tr>
               <td>Tuesday</td>
-              <td>11:00 a.m. – 7:00 p.m.</td>
+              <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
             <tr>
               <td>Wednesday</td>
-              <td>11:00 a.m. – 7:00 p.m.</td>
+              <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
             <tr>
               <td>Thursday</td>
-              <td>11:00 a.m. – 7:00 p.m.</td>
+              <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
             <tr>
               <td>Friday</td>
-              <td>11:00 a.m. – 7:00 p.m.</td>
+              <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
             <tr>
               <td>Saturday</td>
-              <td>11:00 a.m. – 7:00 p.m.</td>
+              <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
             <tr>
               <td>Sunday</td>
-              <td>2:00 – 7:00 p.m.</td>
+              <td>2:00 – 8:00 p.m.</td>
             </tr>
           </table>
         </div>
 
-        <!-- Spacer column-->
-        <div class="col-md-1"></div>
 
-        <div class="col-md-6">
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
           <h3>Find us on Google Maps</h3>
           <br>
           <div id="map"></div>
         </div>
-
       </div>
 
       <!--  Footer Section  -->

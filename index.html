@@ -222,9 +222,9 @@
     h1 {
       font-size: 3em;
       font-weight: 700;
-      margin-top: 0;
+      margin-top: 24px;
       margin-bottom: 0;
-      text-shadow: 0px 2px 3px #000;
+      text-shadow: 1px 5px 3px #000;
       display: inline-block;
       color: #FFCF22;
       line-height: 1em;
@@ -304,6 +304,10 @@
       color: #aaa;
     }
     /* Misc / Utility classes  */
+
+    .highlight {
+      color: #fff;
+    }
 
     .check {
       color: #1bb580;
@@ -468,32 +472,32 @@
 
           <h3>Opening Hours</h3>
           <table class="opening-hours">
-            <tr>
-              <td>Monday</td>
+            <tr data-day="1">
+              <td><b class="fixed-label">Monday</b></td>
               <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
-            <tr>
-              <td>Tuesday</td>
+            <tr data-day="2">
+              <td><b class="fixed-label">Tuesday</b></td>
               <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
-            <tr>
-              <td>Wednesday</td>
+            <tr data-day="3">
+              <td><b class="fixed-label">Wednesday</b></td>
               <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
-            <tr>
-              <td>Thursday</td>
+            <tr data-day="4">
+              <td><b class="fixed-label">Thursday</b></td>
               <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
-            <tr>
-              <td>Friday</td>
+            <tr data-day="5">
+              <td><b class="fixed-label">Friday</b></td>
               <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
-            <tr>
-              <td>Saturday</td>
+            <tr data-day="6">
+              <td><b class="fixed-label">Saturday</b></td>
               <td>11:00 a.m. – 9:00 p.m.</td>
             </tr>
-            <tr>
-              <td>Sunday</td>
+            <tr data-day="0">
+              <td><b class="fixed-label">Sunday</b></td>
               <td>2:00 – 8:00 p.m.</td>
             </tr>
           </table>
@@ -532,6 +536,13 @@
 
       document.getElementById("map").appendChild(iframe);
     }
+
+    function highlightCurrentDay() {
+      var day = new Date().getDay();
+      var currentDay = document.querySelectorAll("[data-day='" + day + "']")[0];
+      currentDay.classList.add('highlight');
+    }
+    highlightCurrentDay();
 
     window.onscroll = function () {
       loadAndDisplayGoogleMap();

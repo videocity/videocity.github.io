@@ -7,7 +7,13 @@
   <title>Video City - Internet Cafe and Movie Rental in Sligo</title>
   <meta name="description" content="Video City - Internet Cafe and Movie Rental in Sligo">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color">
+
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Inlined CSS for pagespeed -->
   <!-- Bootstrap -->
@@ -16,11 +22,6 @@
       background-color: transparent;
       color: #337ab7;
       text-decoration: none
-    }
-
-    a:active,
-    a:hover {
-      outline: 0
     }
 
     b {
@@ -94,7 +95,8 @@
       margin-right: auto;
       margin-left: auto;
       padding-left: 24px;
-      padding-right: 24px
+      padding-right: 24px;
+      padding-bottom: 24px;
     }
 
     .col-md-1,
@@ -120,7 +122,7 @@
         width: 750px;
         padding-left: 24px;
         padding-right: 24px;
-        padding-bottom: 12px;
+        padding-bottom: 24px;
       }
     }
 
@@ -253,7 +255,6 @@
     }
 
     h3 {
-      color: #4da4ce;
       font-size: 24px;
       margin-top: 20px;
       margin-bottom: 0;
@@ -281,6 +282,7 @@
       background: linear-gradient(to right, #f7f7f7 0, #fff 50%, #f7f7f7 100%);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       color: #333;
+      padding-top: 32px;
     }
 
     .panel-bottom {
@@ -341,8 +343,6 @@
       <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
   <![endif]-->
 
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 
 <body>
@@ -436,6 +436,20 @@
   <!--  Movie Rental Section  -->
   <section class="panel">
     <div class="container panel-white">
+
+      <div class="text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1"
+          stroke-linecap="round" stroke-linejoin="round" class="feather feather-film">
+          <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+          <line x1="7" y1="2" x2="7" y2="22"></line>
+          <line x1="17" y1="2" x2="17" y2="22"></line>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <line x1="2" y1="7" x2="7" y2="7"></line>
+          <line x1="2" y1="17" x2="7" y2="17"></line>
+          <line x1="17" y1="17" x2="22" y2="17"></line>
+          <line x1="17" y1="7" x2="22" y2="7"></line>
+        </svg>
+      </div>
 
       <h2 class="text-center">Movie Deals</h2>
 

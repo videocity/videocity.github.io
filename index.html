@@ -15,15 +15,9 @@
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- Inlined CSS for pagespeed -->
+  <!-- CSS inlined for pagespeed -->
   <!-- Bootstrap -->
   <style>
-    a {
-      background-color: transparent;
-      color: #337ab7;
-      text-decoration: none
-    }
-
     b {
       font-weight: 600
     }
@@ -63,10 +57,8 @@
     }
 
     html {
-      font-family: sans-serif;
       -ms-text-size-adjust: 100%;
       -webkit-text-size-adjust: 100%;
-      font-size: 10px;
       -webkit-tap-highlight-color: transparent
     }
 
@@ -74,10 +66,16 @@
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       font-size: 16px;
-      line-height: 1.42857143;
+      line-height: 1.4;
       color: #333;
       background-image: url("img/isometropolis.png");
       background-color: #1768A5;
+    }
+
+    a {
+      background-color: transparent;
+      color: #337ab7;
+      text-decoration: none
     }
 
     a:focus,
@@ -232,9 +230,8 @@
       line-height: 1em;
     }
 
-    .header-postfix {
+    .postfix {
       font-size: 15px;
-      box-shadow: none;
       font-weight: bold;
       white-space: nowrap;
       text-shadow: 0px 2px 3px #000;
@@ -264,12 +261,14 @@
     .panel-header {
       color: #fff;
       font-size: 21px;
-      font-weight: 200;
+    }
+
+    .panel {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
 
     .panel-internet {
       background: linear-gradient(to right, #f7f7f7 0, #e6e6e6 50%, #f7f7f7 100%);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       color: #333;
       border-bottom: solid 2px #333;
     }
@@ -278,32 +277,38 @@
       color: #1768A5;
     }
 
-
-    .panel-white {
+    .panel-movies {
       background: linear-gradient(to right, #f7f7f7 0, #fff 50%, #f7f7f7 100%);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       color: #333;
       padding-top: 32px;
+      text-align: center;
     }
 
-    .panel-bottom {
+    .panel-contact {
       background-color: #22272d;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       color: #aeaeb1;
       padding-top: 36px;
       padding-bottom: 0;
       margin-bottom: 48px;
     }
 
-    .panel-bottom h3 {
+    .panel-contact small {
+      padding: 24px 0;
+      text-align: center;
+      color: #fff;
+      display: block;
+    }
+
+    .panel-contact h3 {
       color: #FFCF22;
     }
 
-    .panel-bottom td:first-child {
+    .panel-contact td:first-child {
       font-weight: bold;
+      width: 80px;
     }
 
-    .panel-bottom a {
+    .panel-contact a {
       color: #aaa;
     }
     /* Misc / Utility classes  */
@@ -318,228 +323,179 @@
       font-weight: bold;
     }
 
-    .text-center {
-      text-align: center;
-    }
-
     .fixed-label {
       width: 80px;
       display: inline-block;
     }
 
-    .price-cell {
+    .price {
       text-align: right;
       padding-left: 16px;
       font-weight: 600;
     }
 
-    footer {
-      padding: 24px 0;
-      text-align: center;
+    #map {
+      margin-top: 12px;
     }
   </style>
 
-  <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-  <![endif]-->
 
 </head>
 
 <body>
-
-  <!-- Page header -->
-  <section class="panel panel-header">
-    <div class="container">
-      <h1>VIDEO CITY</h1>
-      <small class="header-postfix">EST 1982</small>
-      <p class="subheading">Internet Cafe and Movie Rental centrally located in Sligo, Ireland.</p>
-    </div>
-  </section>
+  <div class="container panel-header">
+    <h1>VIDEO CITY</h1>
+    <small class="postfix">EST 1982</small>
+    <p class="subheading">Internet Cafe and Movie Rental centrally located in Sligo, Ireland.</p>
+  </div>
 
 
-  <!--  Internet Cafe Section  -->
-  <section class="panel ">
-    <div class="container panel-internet">
+  <div class="container panel panel-internet">
 
-      <h2>Internet Cafe</h2>
+    <h2>Internet Cafe</h2>
 
-      <div class="row">
+    <div class="row">
 
-        <div class="col-md-5">
-          <h3>Information</h3>
-          <p><span class="check">✓</span> Fast new <b>Windows 10</b> computers.</p>
-          <p><span class="check">✓</span> <b>Printing</b> and <b>Scanning</b> services available.</p>
-          <p><span class="check">✓</span> <b>Photocopying</b> facilities.</p>
-          <p><span class="check">✓</span> <b>Western Union</b> Money Transfer.</p>
-          <p><span class="check">✓</span> Headsets on request.</p>
-          <p><span class="check">✓</span> Video chat using our webcams.</p>
-        </div>
-
-        <div class="col-md-3">
-          <h3>Internet Prices</h3>
-          <table>
-            <tr>
-              <td>5 Minutes</td>
-              <td class="price-cell">€.50</td>
-            </tr>
-            <tr>
-              <td>15 Minutes</td>
-              <td class="price-cell">€1</td>
-            </tr>
-            <tr>
-              <td>30 Minutes</td>
-              <td class="price-cell">€2</td>
-            </tr>
-            <tr>
-              <td>1 Hour</td>
-              <td class="price-cell">€3</td>
-            </tr>
-            <tr>
-              <td>2 Hours</td>
-              <td class="price-cell">€5</td>
-            </tr>
-            <tr>
-              <td>3 Hours</td>
-              <td class="price-cell">€7</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="col-md-4">
-          <h3>Printing Prices</h3>
-          <table>
-            <tr>
-              <td>A4 - Black and White</td>
-              <td class="price-cell">€.20</td>
-            </tr>
-            <tr>
-              <td>A4 - Color</td>
-              <td class="price-cell">€.60</td>
-            </tr>
-            <tr>
-              <td>A3 - Black and White</td>
-              <td class="price-cell">€.40</td>
-            </tr>
-            <tr>
-              <td>A3 - Color</td>
-              <td class="price-cell">€1.20</td>
-            </tr>
-          </table>
-        </div>
-
+      <div class="col-md-5">
+        <h3>Information</h3>
+        <p><span class="check">✓</span> Fast new <b>Windows 10</b> computers.</p>
+        <p><span class="check">✓</span> <b>Printing</b> and <b>Scanning</b> services available.</p>
+        <p><span class="check">✓</span> <b>Photocopying</b> facilities.</p>
+        <p><span class="check">✓</span> <b>Western Union</b> Money Transfer.</p>
+        <p><span class="check">✓</span> Headsets on request.</p>
+        <p><span class="check">✓</span> Video chat using our webcams.</p>
       </div>
+
+      <div class="col-md-3">
+        <h3>Internet Prices</h3>
+        <table>
+          <tr>
+            <td>5 Minutes</td>
+            <td class="price">€.50</td>
+          </tr>
+          <tr>
+            <td>15 Minutes</td>
+            <td class="price">€1</td>
+          </tr>
+          <tr>
+            <td>30 Minutes</td>
+            <td class="price">€2</td>
+          </tr>
+          <tr>
+            <td>1 Hour</td>
+            <td class="price">€3</td>
+          </tr>
+          <tr>
+            <td>2 Hours</td>
+            <td class="price">€5</td>
+          </tr>
+          <tr>
+            <td>3 Hours</td>
+            <td class="price">€7</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Printing Prices</h3>
+        <table>
+          <tr>
+            <td>A4 - Black and White</td>
+            <td class="price">€.20</td>
+          </tr>
+          <tr>
+            <td>A4 - Color</td>
+            <td class="price">€.60</td>
+          </tr>
+          <tr>
+            <td>A3 - Black and White</td>
+            <td class="price">€.40</td>
+          </tr>
+          <tr>
+            <td>A3 - Color</td>
+            <td class="price">€1.20</td>
+          </tr>
+        </table>
+      </div>
+
 
     </div>
-  </section>
+  </div>
 
 
-  <!--  Movie Rental Section  -->
-  <section class="panel">
-    <div class="container panel-white">
+  <div class="container panel panel-movies">
 
-      <div class="text-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1"
-          stroke-linecap="round" stroke-linejoin="round" class="feather feather-film">
-          <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
-          <line x1="7" y1="2" x2="7" y2="22"></line>
-          <line x1="17" y1="2" x2="17" y2="22"></line>
-          <line x1="2" y1="12" x2="22" y2="12"></line>
-          <line x1="2" y1="7" x2="7" y2="7"></line>
-          <line x1="2" y1="17" x2="7" y2="17"></line>
-          <line x1="17" y1="17" x2="22" y2="17"></line>
-          <line x1="17" y1="7" x2="22" y2="7"></line>
-        </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1"
+      stroke-linecap="round" stroke-linejoin="round" class="feather feather-film">
+      <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+      <line x1="7" y1="2" x2="7" y2="22"></line>
+      <line x1="17" y1="2" x2="17" y2="22"></line>
+      <line x1="2" y1="12" x2="22" y2="12"></line>
+      <line x1="2" y1="7" x2="7" y2="7"></line>
+      <line x1="2" y1="17" x2="7" y2="17"></line>
+      <line x1="17" y1="17" x2="22" y2="17"></line>
+      <line x1="17" y1="7" x2="22" y2="7"></line>
+    </svg>
+
+    <h2>Movie Deals</h2>
+    <p><b>2</b> New movies for <b>2</b> nights - Only <b>€6</b></p>
+    <p><b>3</b> Older movies for <b>3</b> nights - Only <b>€5</b></p>
+  </div>
+
+
+  <!--  Contact Us div  -->
+  <div class="container panel panel-contact">
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Contact Us</h3>
+        <p><b class="fixed-label">Phone</b><a href="tel:+353719145685">(071) 914 5685</a></p>
+        <p><b class="fixed-label">Email</b><a href="mailto:videocitysligo@gmail.com">videocitysligo@gmail.com</a></p>
+        <p><b class="fixed-label">Address</b>Video City, Wine St, Sligo, Ireland</p>
+        <br>
       </div>
 
-      <h2 class="text-center">Movie Deals</h2>
 
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p><b>2</b> New movies for <b>2</b> nights - Only <b>€6</b></p>
-          <p><b>3</b> Older movies for <b>3</b> nights - Only <b>€5</b></p>
-        </div>
+      <div class="col-md-6">
+        <h3>Opening Hours</h3>
+        <table class="opening-hours">
+          <tr data-day="1">
+            <td>Monday</td>
+            <td>11:00 a.m. – 9:00 p.m.</td>
+          </tr>
+          <tr data-day="2">
+            <td>Tuesday</td>
+            <td>11:00 a.m. – 9:00 p.m.</td>
+          </tr>
+          <tr data-day="3">
+            <td>Wednesday</td>
+            <td>11:00 a.m. – 9:00 p.m.</td>
+          </tr>
+          <tr data-day="4">
+            <td>Thursday</td>
+            <td>11:00 a.m. – 9:00 p.m.</td>
+          </tr>
+          <tr data-day="5">
+            <td>Friday</td>
+            <td>11:00 a.m. – 9:00 p.m.</td>
+          </tr>
+          <tr data-day="6">
+            <td>Saturday</td>
+            <td>11:00 a.m. – 9:00 p.m.</td>
+          </tr>
+          <tr data-day="0">
+            <td>Sunday</td>
+            <td>2:00 – 8:00 p.m.</td>
+          </tr>
+        </table>
       </div>
-
-    </div>
-  </section>
-
-
-  <!--  Contact Us Section  -->
-  <section class="panel">
-    <div class="container panel-bottom">
-
-      <div class="row">
-
-        <div class="col-md-6">
-
-          <h3>Contact Us</h3>
-          <p><b class="fixed-label">Phone</b><a href="tel:+353719145685">(071) 914 5685</a></p>
-          <p><b class="fixed-label">Email</b><a href="mailto:videocitysligo@gmail.com">videocitysligo@gmail.com</a></p>
-          <p><b class="fixed-label">Address</b>Video City, Wine St, Sligo, Ireland</p>
-
-          <br>
-
-        </div>
-
-
-        <div class="col-md-6">
-
-          <h3>Opening Hours</h3>
-          <table class="opening-hours">
-            <tr data-day="1">
-              <td><b class="fixed-label">Monday</b></td>
-              <td>11:00 a.m. – 9:00 p.m.</td>
-            </tr>
-            <tr data-day="2">
-              <td><b class="fixed-label">Tuesday</b></td>
-              <td>11:00 a.m. – 9:00 p.m.</td>
-            </tr>
-            <tr data-day="3">
-              <td><b class="fixed-label">Wednesday</b></td>
-              <td>11:00 a.m. – 9:00 p.m.</td>
-            </tr>
-            <tr data-day="4">
-              <td><b class="fixed-label">Thursday</b></td>
-              <td>11:00 a.m. – 9:00 p.m.</td>
-            </tr>
-            <tr data-day="5">
-              <td><b class="fixed-label">Friday</b></td>
-              <td>11:00 a.m. – 9:00 p.m.</td>
-            </tr>
-            <tr data-day="6">
-              <td><b class="fixed-label">Saturday</b></td>
-              <td>11:00 a.m. – 9:00 p.m.</td>
-            </tr>
-            <tr data-day="0">
-              <td><b class="fixed-label">Sunday</b></td>
-              <td>2:00 – 8:00 p.m.</td>
-            </tr>
-          </table>
-        </div>
-
-
-
-
-
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Find us on Google Maps</h3>
-          <br>
-          <div id="map"></div>
-        </div>
-      </div>
-
-      <!--  Footer Section  -->
-      <footer>
-        <small>© Video City 2017</small>
-      </footer>
-
     </div>
 
-  </section>
+    <h3>Find us on Google Maps</h3>
+    <div id="map"></div>
+
+    <small>© Video City 2017</small>
+  </div>
 
   <script>
     function loadAndDisplayGoogleMap() {

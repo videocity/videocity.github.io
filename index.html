@@ -224,7 +224,7 @@
     /* Headings */
 
     h1 {
-      font-size: 3em;
+      font-size: 64px;
       font-weight: 700;
       margin-top: 24px;
       margin-bottom: 0;
@@ -239,12 +239,15 @@
       font-weight: bold;
       white-space: nowrap;
       text-shadow: 0 2px 3px #000;
+      color: #fff;
     }
 
     .subheading {
       margin-top: 0;
       font-weight: bold;
       text-shadow: 0 2px 3px #000;
+      color: #fff;
+      font-size: 21px;
     }
 
     h2 {
@@ -261,11 +264,6 @@
       margin-bottom: 0;
     }
     /* Panels */
-
-    .panel-header {
-      color: #fff;
-      font-size: 21px;
-    }
 
     .panel {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -305,6 +303,7 @@
 
     .panel-contact h3 {
       color: #FFCF22;
+      margin-bottom: 12px;
     }
 
     .panel-contact td:first-child {
@@ -337,17 +336,13 @@
       padding-left: 16px;
       font-weight: 600;
     }
-
-    #map {
-      margin-top: 12px;
-    }
   </style>
 
 
 </head>
 
 <body>
-  <div class="container panel-header">
+  <div class="container">
     <h1>VIDEO CITY</h1>
     <small class="postfix">EST 1982</small>
     <p class="subheading">Internet Cafe and Movie Rental centrally located in Sligo, Ireland.</p>
@@ -429,8 +424,7 @@
 
   <div class="container panel panel-movies">
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1"
-      stroke-linecap="round" stroke-linejoin="round" class="feather feather-film">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#666">
       <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
       <line x1="7" y1="2" x2="7" y2="22"></line>
       <line x1="17" y1="2" x2="17" y2="22"></line>
@@ -447,7 +441,6 @@
   </div>
 
 
-  <!--  Contact Us div  -->
   <div class="container panel panel-contact">
 
     <div class="row">

@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Video City - Internet Cafe and Movie Rental in Sligo</title>
-  <meta name="description" content="Video City - Internet Cafe and Movie Rental in Sligo">
+  <title>Video City - Sligo Internet Cafe</title>
+  <meta name="description" content="Video City - Sligo Internet Cafe">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
@@ -256,7 +256,7 @@
 
     h3 {
       font-size: 24px;
-      margin-top: 20px;
+      margin-top: 0;
       margin-bottom: 0;
     }
     /* Panels */
@@ -268,7 +268,6 @@
     .panel-internet {
       background: linear-gradient(to right, #f7f7f7 0, #e6e6e6 50%, #f7f7f7 100%);
       color: #333;
-      border-bottom: solid 2px #333;
     }
 
     .panel-internet h3 {
@@ -276,10 +275,13 @@
     }
 
     .panel-movies {
-      background: linear-gradient(to right, #f7f7f7 0, #fff 50%, #f7f7f7 100%);
-      color: #333;
+      background: #1768A5;
+      color: #fff;
       padding-top: 32px;
-      text-align: center;
+    }
+
+    .panel-internet h3 {
+      margin-top: 0;
     }
 
     .panel-contact {
@@ -341,18 +343,16 @@
   <div class="container">
     <h1>VIDEO CITY</h1>
     <small class="postfix">EST 1982</small>
-    <p class="subheading">Internet Cafe and Movie Rental centrally located in Sligo, Ireland.</p>
+    <p class="subheading">Internet Cafe centrally located in Sligo, Ireland.</p>
   </div>
 
 
   <div class="container panel panel-internet">
 
-    <h2>Internet Cafe</h2>
-
     <div class="row">
 
       <div class="col-md-5">
-        <h3>Information</h3>
+        <h3>Internet Cafe</h3>
         <p><span class="check">✓</span> Fast new <b>Windows 10</b> computers.</p>
         <p><span class="check">✓</span> <b>Printing</b> and <b>Scanning</b> services available.</p>
         <p><span class="check">✓</span> <b>Photocopying</b> facilities.</p>
@@ -419,21 +419,8 @@
 
 
   <div class="container panel panel-movies">
-
-    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#666">
-      <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
-      <line x1="7" y1="2" x2="7" y2="22"></line>
-      <line x1="17" y1="2" x2="17" y2="22"></line>
-      <line x1="2" y1="12" x2="22" y2="12"></line>
-      <line x1="2" y1="7" x2="7" y2="7"></line>
-      <line x1="2" y1="17" x2="7" y2="17"></line>
-      <line x1="17" y1="17" x2="22" y2="17"></line>
-      <line x1="17" y1="7" x2="22" y2="7"></line>
-    </svg>
-
-    <h2>Movie Deals</h2>
-    <p><b>2</b> New movies for <b>2</b> nights - Only <b>€6</b></p>
-    <p><b>3</b> Older movies for <b>3</b> nights - Only <b>€5</b></p>
+    <h3>Movies</h3>
+    <div class="info-note">We no longer offer movies for rental.</div>
   </div>
 
 
@@ -495,7 +482,7 @@
     <h3>Find us on Google Maps</h3>
     <div id="map"></div>
 
-    <small>© Video City 2017</small>
+    <small>© Video City 2018</small>
   </div>
 
   <script>

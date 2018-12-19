@@ -289,6 +289,12 @@
       color: #1768A5;
     }
 
+    .panel-closing {
+      background: #ffcf22;
+      color: #22272d;
+      padding-top: 24px;
+    }
+
     .panel-movies {
       background: #1768A5;
       color: #fff;
@@ -353,8 +359,9 @@
 
     .info-holidays {
       display: inline-block;
-      color: #1768A5;
-      font-weight: bold;
+      color: #fff;
+      font-weight: normal;
+      margin-top: 12px;
     }
   </style>
 
@@ -367,6 +374,15 @@
     <small class="postfix">EST 1982</small>
     <p class="subheading">Internet Cafe centrally located in Sligo, Ireland.</p>
   </div>
+
+  <div class="container panel panel-closing">
+    <h3>Closing Down</h3>
+    <div class="info-note">
+      We are closed for business as of Sunday the 23rd of December. Thank you for your custom over
+      the years.
+    </div>
+  </div>
+
 
   <div class="container panel panel-internet">
 
@@ -467,7 +483,6 @@
 
       <div class="col-md-6">
         <h3>Opening Hours</h3>
-        <div class="info-holidays">We are closed on Bank Holidays.</div>
 
         <table class="opening-hours">
           <tr data-day="1">
@@ -496,9 +511,11 @@
           </tr>
           <tr data-day="0">
             <td>Sunday</td>
-            <td>Closed</td>
+            <td>Closed.</td>
           </tr>
         </table>
+
+        <div class="info-holidays">Closed on Bank Holidays.</div>
       </div>
     </div>
 

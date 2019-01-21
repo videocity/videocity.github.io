@@ -368,7 +368,7 @@
 
 </head>
 
-<body>
+<body class="night-city">
   <div class="container">
     <h1>VIDEO CITY</h1>
     <small class="postfix">EST 1982</small>
@@ -376,7 +376,7 @@
   </div>
 
   <div class="container panel panel-closing">
-    <h3>Closing Down</h3>
+    <h3>Closed</h3>
     <div class="info-note">
       We are closed for business as of Sunday the 23rd of December. Thank you for your custom over
       the years.
@@ -547,15 +547,6 @@
       document.querySelectorAll("[data-day='" + new Date().getDay() + "']")[0]
         .classList
         .add('highlight');
-    })();
-
-    (function setNightBackgroundImage() {
-      var hour = new Date().getUTCHours()
-      if (hour < 11 || hour > 21) {
-        document.querySelector('body')
-          .classList
-          .add('night-city');
-      }
     })();
   </script>
 
